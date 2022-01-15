@@ -352,7 +352,7 @@ function App() {
     !gameStarted && /*#__PURE__*/
     React.createElement(React.Fragment, null, /*#__PURE__*/
     React.createElement("p", { className: "intro-desc" },
-    `The test contains ${questions.length} questions and there is no time limit.`), /*#__PURE__*/
+    `The test contains ${questions.length} questions and there is no time limit. All after exam, should share the screenshot of the result page. 😃`), /*#__PURE__*/
 
 
     React.createElement("button", {
