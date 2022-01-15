@@ -6,41 +6,20 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
   <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
   <link rel="stylesheet" href="./style.css">
-<script language="javascript">
-  var Timer;
-  var TotalSeconds;
-  
-  function CreateTimer(TimerID, Time) 
-  {
-      Timer = document.getElementById(TimerID);
-      TotalSeconds = Time;
-      UpdateTimer()
-      window.setTimeout("Tick()", 1000);
-  }
-  
-  function Tick() 
-  {
-      TotalSeconds -= 1;
-      if(TotalSeconds ==-1)
-        {
-      alert("Time Up");
-      // Show alert Plus redirect any other page
-        }
-     else
-       {
-      UpdateTimer()
-      window.setTimeout("Tick()", 1000);
-       }
-  }
-  
-  function UpdateTimer() {
-      Timer.innerHTML = TotalSeconds;
-  }
-  </script>
 </head>
 <body>
+  <div class="popup-bg">
+    <div class="popup-msg">
+      <div class="close-x">close</div>
+      <h2>Instructions for the Quiz.</h2>
+      <p>✍️ Do not rewrite the Exam.
+         ✍️ Take a screenshot and upload it in the meeting chat.
+         ✍️ There will be no time limit.
+         ✍️ ✍️ ✍️ Good Luck ✍️ ✍️ ✍️  </p>
+    </div>
+  </div>
+  
 <div id="app"></div>
-<div id='timer'></div>
 <script type="text/javascript">window.onload = CreateTimer("timer", 60);</script>
   <script type="module" src="./script.js"></script>
   <script type="text/javascript">
@@ -48,5 +27,6 @@
         return "Don't leave. Exam on the way.";
     }
   </script>
+    </script>
 </body>
 </html>
