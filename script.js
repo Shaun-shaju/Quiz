@@ -10,12 +10,12 @@ import gsap from "https://cdn.skypack.dev/gsap";
 const questions = [
 {
   id: 0,
-  text: "What does CSS stand for?",
+  text: "Where is the headquarters of the United Nations Environment Programme?",
   answers: [
-  "Computer Style Sheets",
-  "Cascading Style Sheets",
-  "Creative Style Sheets",
-  "Colorful Style Sheets"],
+  "Chicago",
+  "Silicon Valley, California",
+  "New York",
+  "Nairobi, Kenya"],
 
   correct: 1,
   selection: null },
@@ -23,16 +23,16 @@ const questions = [
 {
   id: 1,
   text:
-  "The property in CSS used to change the background color of an element is?",
-  answers: ["bgcolor", "color", "background-color", "All of the above"],
-  correct: 2,
+  "'As you like it' is written by?",
+  answers: ["Anne Frank", "Oscar Wilde", "William Shakespeare", "George Orwell"],
+  correct: 3,
   selection: null },
 
 {
   id: 2,
-  text: "The property in CSS used to change the text color of an element is?",
-  answers: ["bgcolor", "color", "background-color", "All of the above"],
-  correct: 1,
+  text: "Equal _____ of the congruent circles subtend equal angles at the centers.",
+  answers: ["Segments", "Radii", "Arcs", "Chords"],
+  correct: 4,
   selection: null },
 
 {
@@ -348,7 +348,7 @@ function App() {
 
     React.createElement("div", { className: "intro" }, /*#__PURE__*/
     React.createElement("div", { className: "intro-inner" }, /*#__PURE__*/
-    React.createElement("h1", { className: "intro-title" }, "CSS Quiz"),
+    React.createElement("h1", { className: "intro-title" }, "Quiz from S. Shaun Benedict"),
     !gameStarted && /*#__PURE__*/
     React.createElement(React.Fragment, null, /*#__PURE__*/
     React.createElement("p", { className: "intro-desc" },
