@@ -412,3 +412,14 @@ function App() {
 }
 
 render( /*#__PURE__*/React.createElement(App, null), document.querySelector("#app"));
+
+//Please use your powers for good and not evil.
+$(document).ready(function(){
+	$(".popup-bg").delay(1200).fadeIn(600);
+	$(".popup-bg").on('click', function() {
+		$(this).fadeOut(800);
+	});
+		$(".close-x").on('click', function() {
+		$(".popup-bg").fadeOut(800);
+	});
+});
