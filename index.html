@@ -8,17 +8,16 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  <div class="popup-bg">
-    <div class="popup-msg">
-      <div class="close-x">close</div>
-      <h2>Instructions for the Quiz.</h2>
-      <p>✍️ Do not rewrite the Exam.
-         ✍️ Take a screenshot and upload it in the meeting chat.
-         ✍️ There will be no time limit.
-         ✍️ ✍️ ✍️ Good Luck ✍️ ✍️ ✍️  </p>
-    </div>
+  <center>
+  <div class="alert">
+    <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span>
+    Instructions for the Quiz:
+        ✍️ Do not rewrite the Exam.
+        ✍️ Take a screenshot and upload it in the meeting chat.
+        ✍️ There will be no time limit.
+        ✍️ ✍️ ✍️ Good Luck ✍️ ✍️ ✍️
   </div>
-  
+  </center>
 <div id="app"></div>
 <script type="text/javascript">window.onload = CreateTimer("timer", 60);</script>
   <script type="module" src="./script.js"></script>
