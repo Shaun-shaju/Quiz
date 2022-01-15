@@ -37,59 +37,71 @@ const questions = [
 
 {
   id: 3,
-  text: "The CSS property used to control the element's font size is?",
-  answers: ["text-style", "font-style", "text-size", "font-size"],
-  correct: 3,
+  text: "If a line intersects two concentric circles with centre O at A, B, C and D, then:",
+  answers: ["AB/CD", "AB < CD", "AB = CD", "AB = CD"],
+  correct: 4,
   selection: null },
 
 {
   id: 4,
-  text: "The HTML attribute used to define the inline styles is?",
-  answers: ["style", "inline", "class", "None of the above"],
-  correct: 0,
+  text: "You are aware of Polio Eradication Programme in your city. Children are vaccinated because",
+  answers: ["It creates immunity in the body", "Vaccination kills the polio causing microorganisms", "Prevents the entry of polio causing organisms in the body", "All of above"],
+  correct: 1,
   selection: null },
 
 {
   id: 5,
-  text: "Are the negative values allowed in padding property?",
-  answers: ["Yes", "No", "It depends on HTML", "None of the above"],
-  correct: 1,
+  text: "Cancer is a disease caused due to the uncontrolled growth of tissues in any part of body.  This disease comes under which of the following types?",
+  answers: ["Congenital disease", "Non-infectious disease", "Infectious disease", "None of the above"],
+  correct: 2,
   selection: null },
 
 {
   id: 6,
   text:
-  "The CSS property used to specify whether the text is written in the horizontal or vertical direction?",
-  answers: ["word-break", "text-transform", "writing-mode", "text-direction"],
-  correct: 2,
+  "When a body falls freely towards the earth, then its total energy",
+  answers: ["First increases and then decreases", " Decreases", "Remains constant", "Increases"],
+  correct: 3,
   selection: null },
 
 {
   id: 7,
-  text: "Which selector is used to specify a style for one unique element?",
-  answers: ["class", "attribute", "text", "id"],
-  correct: 3,
+  text: "Which one of the following is not the unit of energy?",
+  answers: ["Kilowatt", "Kilowatt hour", "Joule", "Newton meter"],
+  correct: 1,
   selection: null },
 
 {
   id: 8,
   text:
-  "Which of the following is the correct syntax to select the p siblings of a div element?",
-  answers: ["p", "div + p", "div p", "div ~ p"],
-  correct: 3,
+  "The type of energy possessed by a simple pendulum, when it is at the mean position is:",
+  answers: ["Kinetic energy ", "Potential energy", "Kinetic + Potential energy", "Sound energy"],
+  correct: 1,
   selection: null },
 
 {
   id: 9,
-  text: "How can you add a comment in a CSS file?",
+  text: "Which of the following contains maximum number of molecules?",
   answers: [
-  "/* this is a comment */",
-  "// this is a comment",
-  "<!-- this is a comment -->",
-  "** this is a comment **"],
+  "19 CO2",
+  "1 g N2",
+  "1 g H2",
+  "1 g CH4"],
 
-  correct: 0,
-  selection: null }];
+  correct: 3,
+  selection: null },
+{
+    id: 10,
+    text: "The molecular formula of potassium nitrate is ________.",
+    answers: [
+    "KNO",
+    "KNO2",
+    "KON",
+    "KNO3"],
+  
+    correct: 4,
+    selection: null }
+];
 
 
 
