@@ -19,6 +19,37 @@
   </div>
   </center>
 <div id="app"></div>
+<div id="contextMenu" class="context-menu" style="display: none"> 
+  <ul class="menu"> 
+    <li class="share"><a href="https://facebook.com" target="_blank"><i class="fa fa-share" aria-hidden="true"></i> Share to facebook</a></li>
+    <li class="rename"><a href="#" onclick="history.back()"><i class="fa fa-pencil" aria-hidden="true"></i> Go to the previous page</a></li> 
+    <li class="copy"><a href="#" onclick="history.go(0)"><i class="fa fa-link" aria-hidden="true"></i>Restart Exam</a></li> 
+    <li class="paste"><a href="#" onclick="window.print()"><i class="fa fa-copy" aria-hidden="true"></i>Print result</a></li>
+  </ul>
+</div> 
+
+<script>
+ document.onclick = hideMenu; 
+ document.oncontextmenu = rightClick; 
+
+  function hideMenu() { 
+      document.getElementById("contextMenu") 
+              .style.display = "none" 
+  } 
+
+  function rightClick(e) { 
+      e.preventDefault(); 
+
+      if (document.getElementById("contextMenu") .style.display == "block"){ 
+          hideMenu(); 
+      }else{ 
+          var menu = document.getElementById("contextMenu")      
+          menu.style.display = 'block'; 
+          menu.style.left = e.pageX + "px"; 
+          menu.style.top = e.pageY + "px"; 
+      } 
+  } 
+</script>
 <script type="text/javascript">window.onload = CreateTimer("timer", 1);</script>
   <script type="module" src="./script.js"></script>
   <script type="text/javascript">
